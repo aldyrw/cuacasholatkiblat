@@ -50,6 +50,8 @@ function cuaca($keyword) {
 	$result .= $json['weather']['0']['main'];
 	$result .= "\nDeskripsi : ";
 	$result .= $json['weather']['0']['description'];
+	$result .= "\nGambar : ";
+	$result .= $json['weather']['0']['icon'];
     return $result;
 }
 #-------------------------[Function]-------------------------#
