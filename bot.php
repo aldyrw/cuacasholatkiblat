@@ -9,6 +9,7 @@ ARW
 
 require_once('./line_class.php');
 require_once('./bot1.php');
+require_once('./bot2.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
 $channelAccessToken = 'rxIFoRfTZ1vXvs3Ipu+ejN6Vwq+iKNIQvPEV2I4gGHQ0X8OAl8L3eHa7VqF2jOZOHEiBUfVd8ZMqn9T6QsV7LmZFp94vmUOTnat0aE/68+4JYKCSqSGYxEvvDGedA/QMuCRbXubQ2HUDa41u9+wSkgdB04t89/1O/w1cDnyilFU='; //sesuaikan 
