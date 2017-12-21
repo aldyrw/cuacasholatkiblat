@@ -43,7 +43,7 @@ function cuaca($keyword) {
     $response = Unirest\Request::get("$uri");
 
     $json = json_decode($response->raw_body, true);
-    $result = "Ini ada Ramalan Cuaca Untuk Daerah ";
+    $result = "Ini Ramalan Cuaca untuk Daerah ";
 	$result .= $json['name'];
 	$result .= " Dan Sekitarnya";
 	$result .= "\n\nCuaca : ";
@@ -62,7 +62,7 @@ function cuaca($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Halo Kak ^_^\nAku Bot Prediksi Cuaca, Kamu bisa mengetahui prediksi cuaca di daerah kamu sesuai dengan sumber BMKG";
+    $text = "Halo \n ARW2017";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -97,7 +97,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Makasih Kak Stikernya ^_^'										
+										'text' => ':)'										
 									
 									)
 							)
