@@ -2,11 +2,13 @@
 /*
 copyright @ medantechno.com
 Modified @ Farzain - zFz
+ARW
 2017
 
 */
 
 require_once('./line_class.php');
+require_once('./bot1.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
 $channelAccessToken = 'rxIFoRfTZ1vXvs3Ipu+ejN6Vwq+iKNIQvPEV2I4gGHQ0X8OAl8L3eHa7VqF2jOZOHEiBUfVd8ZMqn9T6QsV7LmZFp94vmUOTnat0aE/68+4JYKCSqSGYxEvvDGedA/QMuCRbXubQ2HUDa41u9+wSkgdB04t89/1O/w1cDnyilFU='; //sesuaikan 
@@ -50,8 +52,6 @@ function cuaca($keyword) {
 	$result .= $json['weather']['0']['main'];
 	$result .= "\nDeskripsi : ";
 	$result .= $json['weather']['0']['description'];
-	$result .= "\nGambar : ";
-	$result .= $json['weather']['0']['icon'];
     return $result;
 }
 #-------------------------[Function]-------------------------#
